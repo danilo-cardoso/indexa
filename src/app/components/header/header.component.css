@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  border-bottom: 1px solid var(--azul-padrao);
+}
+
+.header .title {
+  text-align: center;
+  font-family: var(--fonte-titulo);
+  color: var(--azul-padrao);
+  font-size: 1.625rem;
+  line-height: 150%;
+  margin-bottom: 2.5rem;
+}
+
+.header .title span {
+  color: var(--laranja-padrao);
+}
