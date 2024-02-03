@@ -1,3 +1,9 @@
 <app-container>
   <app-header></app-header>
+  @for (letra of alphabet; track $index) {
+  <app-separator> {{ letra.toUpperCase() }} </app-separator>
+  <app-contact
+    [contato]="{ nome: 'Zac', telefone: '99 99999-9999' }"
+  ></app-contact>
+  }
 </app-container>

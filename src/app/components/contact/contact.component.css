@@ -1,0 +1,28 @@
+.contact__info-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0.75rem 0;
+}
+
+.contact__info-list__item {
+  font-family: var(--fonte-padrao);
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.contact__info-list__item:first-child {
+  margin-left: 1.5rem;
+  font-weight: 700;
+}
+
+.contact__info-list__item:last-child {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact__info-list__item:last-child button {
+  cursor: pointer;
+}
