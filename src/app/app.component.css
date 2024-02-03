@@ -1,0 +1,23 @@
+input {
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  width: 100%;
+  margin: 2.5rem 0;
+  padding: 0.5rem 0.75rem;
+  background: transparent;
+}
+
+input::content,
+input::placeholder {
+  font-family: var(--fonte-padrao);
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+input:focus {
+  outline: 4px solid #86b7fe;
+}
+
+input::placeholder {
+  color: #6c757d;
+}

@@ -1,8 +1,13 @@
 <app-container>
   <app-header></app-header>
+  <input
+    type="search"
+    placeholder="Digite para buscar"
+    [(ngModel)]="filtroBusca"
+  />
   @for (letra of alphabet; track $index) {
   <app-separator> {{ letra.toUpperCase() }} </app-separator>
-  @for (contato of filterContactsByLetter(letra); track $index) {
+  @for (contato of filterContactsByLetter(letra); track contato.id) {
   <app-contact [contato]="contato"></app-contact>
   } }
 </app-container>

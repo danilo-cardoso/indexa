@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Contato } from '../../interfaces/contato';
 
 @Component({
   selector: 'app-contact',
@@ -8,7 +9,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './contact.component.css',
 })
 export class ContactComponent {
-  @Input() contato = {
+  @Input() contato: Contato = {
+    id: 0,
     nome: '',
     telefone: '',
   };
