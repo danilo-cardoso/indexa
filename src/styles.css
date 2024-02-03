@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+:root {
+  --fonte-titulo: "Zen Dots", sans-serif;
+  --gradiente-fundo: linear-gradient(to bottom, #3d8bfd, #e7f1ff);
+  --azul-padrao: #0d6efd;
+  --laranja-padrao: #fd9843;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--gradiente-fundo);
+  min-height: 100vh;
+}
