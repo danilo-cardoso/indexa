@@ -9,6 +9,7 @@ import { Contato } from './interfaces/contato';
 
 import agenda from './agenda.json';
 import { FormsModule } from '@angular/forms';
+import { FormularioContatoComponent } from './pages/formulario-contato/formulario-contato.component';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     SeparatorComponent,
     ContactComponent,
     FormsModule,
+    FormularioContatoComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
