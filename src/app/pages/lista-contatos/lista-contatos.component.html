@@ -1,0 +1,21 @@
+<app-container>
+  <app-header></app-header>
+  <input
+    type="search"
+    placeholder="Digite para buscar"
+    [(ngModel)]="filtroBusca"
+  />
+
+  <section class="adicionar-contato">
+    <button [routerLink]="['/formulario']" routerLinkActive="router-link-active" >
+      <img src="../../../assets/imagens/plus.png" alt="">
+      <span>Adicionar contato</span>
+    </button>
+  </section>
+
+  @for (letra of alphabet; track $index) {
+  <app-separator> {{ letra.toUpperCase() }} </app-separator>
+  @for (contato of filterContactsByLetter(letra); track contato.id) {
+  <app-contact [contato]="contato"></app-contact>
+  } }
+</app-container>

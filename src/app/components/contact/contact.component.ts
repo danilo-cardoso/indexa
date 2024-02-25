@@ -13,5 +13,6 @@ export class ContactComponent {
     id: 0,
     nome: '',
     telefone: '',
+    email: '',
   };
 }
